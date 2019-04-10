@@ -17,18 +17,16 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.iig.gcp.constants.OracleConstants;
 import com.iig.gcp.extraction.dto.ConnectionDTO;
-import com.iig.gcp.utils.MetadataDBConnectionUtils;
+
 import com.iig.gcp.utils.ConnectionUtils;
 import com.iig.gcp.utils.EncryptionUtil;
 
-@SuppressWarnings("unused")
 @Component
 public class APIConnectionRepositoryImpl implements APIConnectionRepository {
 

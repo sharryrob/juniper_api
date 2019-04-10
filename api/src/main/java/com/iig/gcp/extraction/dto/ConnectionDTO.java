@@ -17,6 +17,8 @@ public class ConnectionDTO {
 	private String project_name;
 	private String created_By;
 	private String updated_By;
+	private Date created_Date;
+	private Date updated_Date;
 
 	/**
 	 * @return Date
@@ -45,9 +47,6 @@ public class ConnectionDTO {
 	public void setUpdated_Date(Date updated_Date) {
 		this.updated_Date = updated_Date;
 	}
-
-	private Date created_Date;
-	private Date updated_Date;
 
 	/**
 	 * @return String
