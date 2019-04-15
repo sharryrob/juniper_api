@@ -4,13 +4,8 @@ import java.util.ArrayList;
 
 import javax.validation.Valid;
 
-import org.json.JSONException;
-
-import java.io.File;
-
 import com.iig.gcp.extraction.dto.ConnectionDTO;
 
-@SuppressWarnings("unused")
 public interface ExtractionService {
 
 	public String invokeRest(String json, String url) throws UnsupportedOperationException, Exception;

@@ -72,7 +72,6 @@ public class APIConnectionRepositoryImpl implements APIConnectionRepository {
 			e.printStackTrace();
 			return "Error retrieving system and project details";
 		}
-		String insertConnDetails = "";
 		String sequence = "";
 		String connectionId = "";
 		byte[] encrypted_key = null;
@@ -224,7 +223,7 @@ public class APIConnectionRepositoryImpl implements APIConnectionRepository {
 			return "Failed to connect to Metadata database";
 		}
 
-		String updateConnectionMaster = "";
+//		String updateConnectionMaster = "";
 		PreparedStatement pstm = null;
 		int system_sequence = 0;
 		int project_sequence = 0;

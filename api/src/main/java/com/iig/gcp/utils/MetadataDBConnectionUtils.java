@@ -14,6 +14,10 @@ import com.iig.gcp.constants.*;
 public class MetadataDBConnectionUtils {
 
 	private static String oracle_ip_port;
+	private static String oracle_decrypt_pwd;
+	private static String master_key_path;
+	private static String oracle_jdbc_url;
+	private static String oracle_user_name;
 
 	/**
 	 * @param value
@@ -23,8 +27,6 @@ public class MetadataDBConnectionUtils {
 		MetadataDBConnectionUtils.oracle_ip_port = value;
 	}
 
-	private static String oracle_jdbc_url;
-
 	/**
 	 * @param value
 	 */
@@ -32,8 +34,6 @@ public class MetadataDBConnectionUtils {
 	public void setJdbcUrl(String value) {
 		MetadataDBConnectionUtils.oracle_jdbc_url = value;
 	}
-
-	private static String oracle_user_name;
 
 	/**
 	 * @param value
@@ -43,8 +43,6 @@ public class MetadataDBConnectionUtils {
 		MetadataDBConnectionUtils.oracle_user_name = value;
 	}
 
-	private static String oracle_decrypt_pwd;
-
 	/**
 	 * @param value
 	 */
@@ -52,8 +50,6 @@ public class MetadataDBConnectionUtils {
 	public void setPassword(String value) {
 		MetadataDBConnectionUtils.oracle_decrypt_pwd = value;
 	}
-
-	private static String master_key_path;
 
 	/**
 	 * @param value

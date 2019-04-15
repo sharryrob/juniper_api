@@ -1,27 +1,20 @@
 package com.iig.gcp.extraction.service;
 
 import java.sql.Connection;
-import java.io.File;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+
 import java.util.ArrayList;
 import java.util.Date;
-import javax.crypto.SecretKey;
+
 import javax.validation.Valid;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
 import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
-import java.io.FileInputStream;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -33,24 +26,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.iig.gcp.constants.OracleConstants;
 
 import com.iig.gcp.extraction.dto.ConnectionDTO;
 
 import com.iig.gcp.utils.ConnectionUtils;
-import com.iig.gcp.utils.EncryptionUtil;
 
-import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import com.iig.gcp.extraction.repository.APIConnectionRepository;
 
-
-@SuppressWarnings("unused")
 @Service
 public class ExtractionServiceImpl implements ExtractionService {
 

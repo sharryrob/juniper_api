@@ -27,17 +27,17 @@ class DataSourceConfig {
 	@Value("${spring.datasource.url}")
 	private String dataSourceUrl;
 
-	@Value("${spring.datasource.driver-class-name}")
-	private String dataSourceClassName;
+//	@Value("${spring.datasource.driver-class-name}")
+//	private String dataSourceClassName;
 
 	@Value("${spring.datasource.poolName}")
 	private String poolName;
 
-	@Value("${spring.datasource.hikari.connectionTimeout}")
-	private int connectionTimeout;
+//	@Value("${spring.datasource.hikari.connectionTimeout}")
+//	private int connectionTimeout;
 
-	@Value("${spring.datasource.hikari.maxLifetime}")
-	private int maxLifetime;
+//	@Value("${spring.datasource.hikari.maxLifetime}")
+//	private int maxLifetime;
 
 	@Value("${spring.datasource.hikari.maximumPoolSize}")
 	private int maximumPoolSize;
@@ -45,8 +45,8 @@ class DataSourceConfig {
 	@Value("${spring.datasource.hikari.minimumIdle}")
 	private int minimumIdle;
 
-	@Value("${spring.datasource.hikari.idleTimeout}")
-	private int idleTimeout;
+//	@Value("${spring.datasource.hikari.idleTimeout}")
+//	private int idleTimeout;
 
 	@Value("${master.key.path}")
 	private String master_key_path;
